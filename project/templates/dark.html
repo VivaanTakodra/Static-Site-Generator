@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ metadata.title if metadata.title else "Untitled" }}</title>
+    <style>
+        body { background-color: #333; color: #fff; font-family: Arial, sans-serif; }
+        a { color: #1e90ff; }
+    </style>
+</head>
+<body>
+    <h1>{{ metadata.title if metadata.title else "Untitled" }}</h1>
+    <div>{{ content|safe }}</div>
+</body>
+</html>
